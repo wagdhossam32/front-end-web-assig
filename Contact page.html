@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+   
+    <title>Contact Me Form</title>
+</head>
+ <!----------- difference between GET and POST is that GET shows the values that u have entered in the url link and all the inputs will be known 
+    while POST make it hidden  , also 
+    GET is used for retrieving data like searching or paging, 
+     POST is used for modifying data  or creating new resources
+    ------------>
+<body>
+    <!-- webpage head -->
+   <center><h1>Contact Me</h1></center> 
+   <form action="Thankyou.html" method="get">
+        <!---------- making border to the table --------->
+        <style>
+            table {
+                border: 3px solid black;
+                border-collapse: collapse;
+            }
+            </style>
+        <center><table></center>
+            
+        <!-----------table caption------->
+        <caption>Contact Me Form</caption>
+
+            <!-- Table row for the name input -->
+        <tr>
+               
+        <td><center>Contact Me</center></td>
+        </tr>
+        <tr>
+    <!------------ Table data cells containing the labels -------- -->
+            <td>Your Name:</td><br>
+               
+            <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                
+            <td>Your opinion on the website:</td>
+                
+            <td>
+                    <input type="radio" id="very-good" name="opinion" value="Very good">
+                    <label for="very-good">Very good</label>
+                    <input type="radio" id="good" name="opinion" value="Good">
+                    <label for="good">Good</label>
+                    <input type="radio" id="fair" name="opinion" value="Fair">
+                    <label for="fair">Fair</label>
+            </td>
+            </tr>
+
+            <!------------------ Table row for the gender ------------>
+            <tr>
+               
+            <td>Gender:</td>
+               
+            <td>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+            </td>
+            </tr><tr>
+               
+            <td>Marital status:</td>
+               
+            <td>
+                <select name="marital-status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="other" selected>Other</option>
+                </select>
+            </td>
+            </tr>
+
+        <!--------- Table row for the checkboxes -------------->
+            <tr>
+                
+                <td>You know about my website from:</td>
+                
+                <td>
+                    <label name="source">
+                        <input type="checkbox" value="Internet">Internet&nbsp;
+                        <input type="checkbox" value="friend">friend&nbsp;
+                        <input type="checkbox" value="search-engine">search-engine&nbsp;
+                        <input type="checkbox" value="other">other
+                    </label>
+                </td>
+            </tr>
+
+           
+            <tr>
+        <!-----------the label for the email input ------------->
+                <td>Mail:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                
+            <td>Subject:</td>
+           
+            <td><input type="text" name="subject" required></td>
+            </tr>
+
+            <tr>
+             
+                <td>Message:</td>
+              
+                <td><textarea name="message" rows="4" cols="50" required></textarea></td>
+            </tr>
+
+        <!-------------the submit button ---------------->
+            <tr>
+        <!---------------- Table spanning two columns, containing the submit button ------------>
+            <td style="text-align: center;" colspan="2">
+            <input type="submit" value="Submit">
+    </td>
+    </tr>
+    </table>
+    </form>
+</body>
+</html>
